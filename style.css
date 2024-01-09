@@ -158,12 +158,60 @@ footer p {
     width: 80vw;
 }
 
+.gallery h1 {
+    margin: 0;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+.photos-grid {
+    padding: 20px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+}
+
+.photos-grid img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1000px) {
     .images img {
         width: 400px;
         height: 200px;
     }
-    .text h1 {
+    .text h1, .gallery h1 {
         font-size: 1.8em;
     }
     .basketball {
@@ -203,7 +251,7 @@ footer p {
         width: 350px;
         height: 180px;
     }
-    .text h1 {
+    .text h1, .gallery h1 {
         font-size: 1.3em;
     }
     .text p {
@@ -224,9 +272,18 @@ footer p {
     }
 }
 
-@media only screen and (max-height: 380px) {
+@media only screen and (max-height: 560px) {
     header {
-        height: 50px;
+        height: 30px;
+    }
+    .portfolio {
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-height: 380px) {
+    .portfolio {
+        height: 250vh;
     }
 }
 
@@ -263,7 +320,7 @@ footer p {
         width: 280px;
         height: 150px;
     }
-    .text h1 {
+    .text h1, .gallery h1 {
         font-size: 1.0em;
     }
     .text p {
@@ -315,6 +372,13 @@ footer p {
     .portfolio {
         height: 110vh;
     }
+    .photos-grid img {
+        width: 300px;
+        height: 250px;
+    }
+    .photos-grid {
+        padding: 10px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -334,6 +398,10 @@ footer p {
     .portfolio {
         height: 110vh;
     }
+    .photos-grid img {
+        width: 220px;
+        height: 180px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -346,6 +414,10 @@ footer p {
     }
     a, h3, p {
         font-size: 0.6em;
+    }
+    .photos-grid img {
+        width: 280px;
+        height: 220px;
     }
 }
 
