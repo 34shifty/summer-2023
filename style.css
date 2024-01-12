@@ -419,6 +419,9 @@ footer p {
         width: 280px;
         height: 220px;
     }
+    .photos-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 350px){
